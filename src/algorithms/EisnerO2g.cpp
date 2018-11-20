@@ -43,7 +43,7 @@ static void fill_result_o2g(int length,int *which,vector<int>* result,int g,int 
 }
 
 //scores: S[g][h][m] (S[0][0][m])
-vector<int>* decodeProjective_o2g(int length,double* scores)
+vector<int> decodeProjective_o2g(int length,double* scores)
 {
 	// the tables
 	int total_size = length*length*length*2;
@@ -147,6 +147,6 @@ vector<int>* decodeProjective_o2g(int length,double* scores)
 	fill_result_o2g(length,which,result,0,0,length-1,E_COM_O2g);
 	delete []scores_table;
 	delete []which;
-	return result;
+	return *result;
 }
 

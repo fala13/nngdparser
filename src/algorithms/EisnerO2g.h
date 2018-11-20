@@ -39,7 +39,7 @@ inline int get_index2_o2g(int len,int g,int h,int m)
 	return key;
 }
 
-extern vector<int>* decodeProjective_o2g(int length,double* scores);
+extern vector<int> decodeProjective_o2g(int length,double* scores);
 
 
 #endif /* ALGORITHMS_EISNERO2G_H_ */
